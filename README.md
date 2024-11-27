@@ -48,6 +48,6 @@ Enhance permissions management with drag-and-drop or role inheritance.
 
 # Clone the repository:
   Copy code
-git clone https://github.com/your-username/rbac-admin-dashboard.git
+git clone https://github.com/Dhanashri2906/-Role-Based-Access-Control-RBAC-UI-
 cd rbac-admin-dashboard
 Open the project: Open the index.html file in your browser to view the dashboard.
