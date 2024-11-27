@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RBAC Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="dashboard">
+    <header>
+      <nav>
+        <h1>Admin Dashboard</h1>
+      <ul class="navi">
+        <li><a href="RBAC.html">User Management</a></li>
+        <li><a href="RoleManagment.html">Role Management</a></li>
+        <li><a href="Permission.html">Permissions Management</a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <main>
+      <!-- User Management Section -->
+      <section id="user-management">
+        <h2>User Management</h2>
+        <button onclick="openModal('addUser')">Add User</button>
+        <input type="text" id="user-search" oninput="filterUsers()" />
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="user-table">
+            <!-- Users will be rendered dynamically here -->
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Modals -->
+  <div id="modal" class="hidden">
+    <div id="modal-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
